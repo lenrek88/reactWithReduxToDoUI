@@ -1,0 +1,142 @@
+
+
+
+html {
+  background-color: lightgrey;
+  font-family: "Roboto", sans-serif;
+  font-weight: normal;
+  font-size: 1.8vh;
+  -webkit-tap-highlight-color: transparent;
+
+}
+
+.content{
+  width: 44.673vh;
+  background-color: white;
+  margin: 20vh auto;
+  text-align: center;
+  padding: 0.84vh;
+
+}
+.text.one {
+  padding-top: 0.845vh;
+  padding-bottom: 1.127vh;
+  font-style: normal;
+  font-size: 1.8vh;
+  line-height: 2vh;
+
+}
+.task.add {
+  display: flex;
+  min-height: 3vh;
+  background: #FFFFFF;
+  border: 0.1vh solid #989898;
+  box-sizing: border-box;
+  border-radius: 0.6vh;
+  margin-bottom: 1.3vh;
+  vertical-align: baseline;
+  transition: .3s;
+}
+.task.add.error {
+  background-color: rgba(195, 30, 30, 0.4);
+  border-color: rgba(255, 0, 0, 0.7);
+  transition: .3s;
+}
+.new.task {
+  font: inherit;
+  border: none;
+  border-radius: inherit;
+  background-color: transparent;
+  padding: 1.128vh;
+  width: 40vh;
+  box-sizing: border-box;
+  margin: 0;
+  border: 0;
+}
+.sumbit.task{
+  background: url(../Style/cross.svg) no-repeat center;
+  transform: rotate(45deg);
+  background-size: cover;
+  width: 2vh;
+  height: 2vh;
+  margin: auto;
+  padding: 0;
+  border: 0;
+  color: white;
+}
+
+
+.not-completed{
+  margin-bottom: 1.5vh;
+  min-height: 2vh;
+  border: 0.1vh solid #989898;
+  border-radius: 0.6vh;
+  transition: 0.2s;
+  display: flex;
+  min-height: inherit;
+  justify-content: space-between;
+  padding: 1.2vh;
+  transition: .3s;
+}
+
+.not-completed.done{
+  background-color: #F4F4F4;
+  transition: .3s;
+}
+.not-completed input{
+  /*margin: 0;*/
+  /*background-size: cover;*/
+  /*!*padding: 0.2vh 1vh 0 0;*!*/
+  /*width: 2.3vh;*/
+  /*height: 2.3vh;*/
+  /*cursor: pointer;*/
+  /*background-color: transparent;*/
+  /*border-radius: 50vh;*/
+  /*-webkit-border-radius: 50vh;*/
+  /*border: 0.2vh solid #998899;*/
+
+  /*!*outline:  0.1vh solid #998899;*!*/
+  /*outline: none;*/
+
+  /*color: white;*/
+  width: 2.3vh;
+  height: 2.3vh;
+  border: 0.1vh solid #989898;
+  border-radius: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  /* for phone */
+  appearance: none;
+  -webkit-appearance: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.not-completed.done input:checked{
+  width: 2.3vh;
+  height: 2.3vh;
+  border: 0.3vh solid white;
+  background: #c4c4c4;
+  border-radius: 100%;
+  box-shadow: 0 0 0 0.07rem #989898;
+}
+
+.add-task label{
+  max-width: 35vh;
+  margin-right: auto;
+  margin-left: 1.25vh;
+  word-wrap: break-word;
+}
+
+.add-task button{
+  border: none;
+  padding: 0;
+  width: 2vh;
+  height: 2vh;
+  background: url(../Style/cross.svg) no-repeat;
+  background-size: cover;
+}
